@@ -1,0 +1,1044 @@
+[
+  {
+    "model": "Haiku 4.5",
+    "avg_item_accuracy": 0.875,
+    "avg_qty_accuracy": 0.875,
+    "parse_errors": 0,
+    "avg_latency": 1.1145950198173522,
+    "total_input_tokens": 3554,
+    "total_output_tokens": 1242,
+    "cost_per_1k_msgs": 0.39056,
+    "results": [
+      {
+        "id": 1,
+        "message": "doodh khatam ho gaya, 2 litre lena",
+        "predicted": [
+          {
+            "item": "milk",
+            "qty": 2,
+            "unit": "litre",
+            "original_text": "2 litre doodh"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.1814587116241455,
+        "input_tokens": 183,
+        "output_tokens": 43,
+        "parse_error": false
+      },
+      {
+        "id": 2,
+        "message": "kal agarbatti lena",
+        "predicted": [
+          {
+            "item": "incense sticks",
+            "qty": null,
+            "unit": null,
+            "original_text": "agarbatti"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 0.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.05256986618042,
+        "input_tokens": 173,
+        "output_tokens": 39,
+        "parse_error": false
+      },
+      {
+        "id": 3,
+        "message": "bourbon biscuits",
+        "predicted": [
+          {
+            "item": "bourbon biscuits",
+            "qty": null,
+            "unit": null,
+            "original_text": "bourbon biscuits"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 0.973869800567627,
+        "input_tokens": 170,
+        "output_tokens": 40,
+        "parse_error": false
+      },
+      {
+        "id": 4,
+        "message": "tomatoes and onions, 1kg each",
+        "predicted": [
+          {
+            "item": "tomatoes",
+            "qty": 1,
+            "unit": "kg",
+            "original_text": "tomatoes, 1kg each"
+          },
+          {
+            "item": "onions",
+            "qty": 1,
+            "unit": "kg",
+            "original_text": "onions, 1kg each"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.114574909210205,
+        "input_tokens": 176,
+        "output_tokens": 81,
+        "parse_error": false
+      },
+      {
+        "id": 5,
+        "message": "chawal khatam hua, 5kg mangao",
+        "predicted": [
+          {
+            "item": "rice",
+            "qty": 5,
+            "unit": "kg",
+            "original_text": "5kg mangao"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 0.9835755825042725,
+        "input_tokens": 179,
+        "output_tokens": 39,
+        "parse_error": false
+      },
+      {
+        "id": 6,
+        "message": "sabun aur shampoo dono lao",
+        "predicted": [
+          {
+            "item": "soap",
+            "qty": null,
+            "unit": null,
+            "original_text": "sabun"
+          },
+          {
+            "item": "shampoo",
+            "qty": null,
+            "unit": null,
+            "original_text": "shampoo"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.2280631065368652,
+        "input_tokens": 177,
+        "output_tokens": 68,
+        "parse_error": false
+      },
+      {
+        "id": 7,
+        "message": "please get eggs, 1 dozen",
+        "predicted": [
+          {
+            "item": "eggs",
+            "qty": 1,
+            "unit": "dozen",
+            "original_text": "1 dozen eggs"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 0.0
+        },
+        "latency": 0.922896146774292,
+        "input_tokens": 174,
+        "output_tokens": 39,
+        "parse_error": false
+      },
+      {
+        "id": 8,
+        "message": "Atta khatam hone wala hai - 10kg wala pack lena",
+        "predicted": [
+          {
+            "item": "atta",
+            "qty": 10,
+            "unit": "kg",
+            "original_text": "10kg wala pack"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 0.0,
+          "qty_accuracy": 0.0
+        },
+        "latency": 1.125295877456665,
+        "input_tokens": 186,
+        "output_tokens": 41,
+        "parse_error": false
+      },
+      {
+        "id": 9,
+        "message": "3 packet maggi aur ek coke 2L",
+        "predicted": [
+          {
+            "item": "maggi",
+            "qty": 3,
+            "unit": "packet",
+            "original_text": "3 packet maggi"
+          },
+          {
+            "item": "coke",
+            "qty": 2,
+            "unit": "litre",
+            "original_text": "ek coke 2L"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.0778861045837402,
+        "input_tokens": 181,
+        "output_tokens": 80,
+        "parse_error": false
+      },
+      {
+        "id": 10,
+        "message": "butter milk and bread",
+        "predicted": [
+          {
+            "item": "buttermilk",
+            "qty": null,
+            "unit": null,
+            "original_text": "butter milk"
+          },
+          {
+            "item": "bread",
+            "qty": null,
+            "unit": null,
+            "original_text": "bread"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 3,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.4524269104003906,
+        "input_tokens": 170,
+        "output_tokens": 67,
+        "parse_error": false
+      },
+      {
+        "id": 11,
+        "message": "nimbu lena 6-7",
+        "predicted": [
+          {
+            "item": "lemon",
+            "qty": 6,
+            "unit": "pieces",
+            "original_text": "nimbu lena 6-7"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.192962884902954,
+        "input_tokens": 174,
+        "output_tokens": 44,
+        "parse_error": false
+      },
+      {
+        "id": 12,
+        "message": "laundry detergent powder, Surf Excel wala",
+        "predicted": [
+          {
+            "item": "laundry detergent powder",
+            "qty": null,
+            "unit": null,
+            "original_text": "laundry detergent powder, Surf Excel wala"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 0.967482328414917,
+        "input_tokens": 179,
+        "output_tokens": 52,
+        "parse_error": false
+      },
+      {
+        "id": 13,
+        "message": "haldi, jeera, dhania powder - sab khatam hai",
+        "predicted": [
+          {
+            "item": "turmeric",
+            "qty": null,
+            "unit": null,
+            "original_text": "haldi"
+          },
+          {
+            "item": "cumin",
+            "qty": null,
+            "unit": null,
+            "original_text": "jeera"
+          },
+          {
+            "item": "coriander powder",
+            "qty": null,
+            "unit": null,
+            "original_text": "dhania powder"
+          }
+        ],
+        "score": {
+          "items_found": 3,
+          "items_expected": 3,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.2853307723999023,
+        "input_tokens": 182,
+        "output_tokens": 99,
+        "parse_error": false
+      },
+      {
+        "id": 14,
+        "message": "2 coconuts please",
+        "predicted": [
+          {
+            "item": "coconut",
+            "qty": 2,
+            "unit": "pieces",
+            "original_text": "2 coconuts"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.0892550945281982,
+        "input_tokens": 172,
+        "output_tokens": 40,
+        "parse_error": false
+      },
+      {
+        "id": 15,
+        "message": "paneer 500gm aur dahi ek kg",
+        "predicted": [
+          {
+            "item": "paneer",
+            "qty": 500,
+            "unit": "gm",
+            "original_text": "paneer 500gm"
+          },
+          {
+            "item": "dahi",
+            "qty": 1,
+            "unit": "kg",
+            "original_text": "dahi ek kg"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 0.5,
+          "qty_accuracy": 0.5
+        },
+        "latency": 1.0894489288330078,
+        "input_tokens": 179,
+        "output_tokens": 79,
+        "parse_error": false
+      },
+      {
+        "id": 16,
+        "message": "bathroom soap khatam, dettol wala",
+        "predicted": [
+          {
+            "item": "bathroom soap",
+            "qty": null,
+            "unit": null,
+            "original_text": "bathroom soap khatam"
+          },
+          {
+            "item": "dettol",
+            "qty": null,
+            "unit": null,
+            "original_text": "dettol wala"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.2644448280334473,
+        "input_tokens": 177,
+        "output_tokens": 98,
+        "parse_error": false
+      },
+      {
+        "id": 17,
+        "message": "spinach aur karela lena, sabzi ke liye",
+        "predicted": [
+          {
+            "item": "spinach",
+            "qty": null,
+            "unit": null,
+            "original_text": "spinach"
+          },
+          {
+            "item": "bitter gourd",
+            "qty": null,
+            "unit": null,
+            "original_text": "karela"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.1048672199249268,
+        "input_tokens": 180,
+        "output_tokens": 68,
+        "parse_error": false
+      },
+      {
+        "id": 18,
+        "message": "oil khatam - 1L sunflower oil",
+        "predicted": [
+          {
+            "item": "sunflower oil",
+            "qty": 1,
+            "unit": "litre",
+            "original_text": "1L sunflower oil"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.008385181427002,
+        "input_tokens": 178,
+        "output_tokens": 45,
+        "parse_error": false
+      },
+      {
+        "id": 19,
+        "message": "bhaiya please get chips lays 3 packets aur sprite 1.5L wala",
+        "predicted": [
+          {
+            "item": "chips lays",
+            "qty": 3,
+            "unit": "packet",
+            "original_text": "chips lays 3 packets"
+          },
+          {
+            "item": "sprite",
+            "qty": 1.5,
+            "unit": "litre",
+            "original_text": "sprite 1.5L"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.117652177810669,
+        "input_tokens": 188,
+        "output_tokens": 83,
+        "parse_error": false
+      },
+      {
+        "id": 20,
+        "message": "tissue paper, toilet paper, and kitchen towels",
+        "predicted": [
+          {
+            "item": "tissue paper",
+            "qty": null,
+            "unit": null,
+            "original_text": "tissue paper"
+          },
+          {
+            "item": "toilet paper",
+            "qty": null,
+            "unit": null,
+            "original_text": "toilet paper"
+          },
+          {
+            "item": "kitchen towels",
+            "qty": null,
+            "unit": null,
+            "original_text": "kitchen towels"
+          }
+        ],
+        "score": {
+          "items_found": 3,
+          "items_expected": 3,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.0594539642333984,
+        "input_tokens": 176,
+        "output_tokens": 97,
+        "parse_error": false
+      }
+    ]
+  },
+  {
+    "model": "Sonnet 4.6",
+    "avg_item_accuracy": 0.95,
+    "avg_qty_accuracy": 0.975,
+    "parse_errors": 0,
+    "avg_latency": 2.1018184065818786,
+    "total_input_tokens": 3574,
+    "total_output_tokens": 1113,
+    "cost_per_1k_msgs": 1.3708500000000001,
+    "results": [
+      {
+        "id": 1,
+        "message": "doodh khatam ho gaya, 2 litre lena",
+        "predicted": [
+          {
+            "item": "milk",
+            "qty": 2,
+            "unit": "litre",
+            "original_text": "2 litre lena"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.5263261795043945,
+        "input_tokens": 184,
+        "output_tokens": 37,
+        "parse_error": false
+      },
+      {
+        "id": 2,
+        "message": "kal agarbatti lena",
+        "predicted": [
+          {
+            "item": "incense sticks",
+            "qty": null,
+            "unit": null,
+            "original_text": "agarbatti"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 0.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.8432130813598633,
+        "input_tokens": 174,
+        "output_tokens": 34,
+        "parse_error": false
+      },
+      {
+        "id": 3,
+        "message": "bourbon biscuits",
+        "predicted": [
+          {
+            "item": "bourbon biscuits",
+            "qty": null,
+            "unit": null,
+            "original_text": "bourbon biscuits"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.8763599395751953,
+        "input_tokens": 171,
+        "output_tokens": 35,
+        "parse_error": false
+      },
+      {
+        "id": 4,
+        "message": "tomatoes and onions, 1kg each",
+        "predicted": [
+          {
+            "item": "tomatoes",
+            "qty": 1,
+            "unit": "kg",
+            "original_text": "tomatoes"
+          },
+          {
+            "item": "onions",
+            "qty": 1,
+            "unit": "kg",
+            "original_text": "onions"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 2.318704128265381,
+        "input_tokens": 177,
+        "output_tokens": 62,
+        "parse_error": false
+      },
+      {
+        "id": 5,
+        "message": "chawal khatam hua, 5kg mangao",
+        "predicted": [
+          {
+            "item": "rice",
+            "qty": 5,
+            "unit": "kg",
+            "original_text": "chawal khatam hua, 5kg mangao"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.388746976852417,
+        "input_tokens": 180,
+        "output_tokens": 43,
+        "parse_error": false
+      },
+      {
+        "id": 6,
+        "message": "sabun aur shampoo dono lao",
+        "predicted": [
+          {
+            "item": "soap",
+            "qty": null,
+            "unit": null,
+            "original_text": "sabun"
+          },
+          {
+            "item": "shampoo",
+            "qty": null,
+            "unit": null,
+            "original_text": "shampoo"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.6658117771148682,
+        "input_tokens": 178,
+        "output_tokens": 64,
+        "parse_error": false
+      },
+      {
+        "id": 7,
+        "message": "please get eggs, 1 dozen",
+        "predicted": [
+          {
+            "item": "eggs",
+            "qty": 12,
+            "unit": "pieces",
+            "original_text": "eggs, 1 dozen"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 5.7410478591918945,
+        "input_tokens": 175,
+        "output_tokens": 36,
+        "parse_error": false
+      },
+      {
+        "id": 8,
+        "message": "Atta khatam hone wala hai - 10kg wala pack lena",
+        "predicted": [
+          {
+            "item": "wheat flour",
+            "qty": 10,
+            "unit": "kg",
+            "original_text": "Atta khatam hone wala hai - 10kg wala pack lena"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.9558179378509521,
+        "input_tokens": 187,
+        "output_tokens": 51,
+        "parse_error": false
+      },
+      {
+        "id": 9,
+        "message": "3 packet maggi aur ek coke 2L",
+        "predicted": [
+          {
+            "item": "maggi",
+            "qty": 3,
+            "unit": "packet",
+            "original_text": "3 packet maggi"
+          },
+          {
+            "item": "coke",
+            "qty": 1,
+            "unit": "2L",
+            "original_text": "ek coke 2L"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 0.5
+        },
+        "latency": 1.9680290222167969,
+        "input_tokens": 182,
+        "output_tokens": 71,
+        "parse_error": false
+      },
+      {
+        "id": 10,
+        "message": "butter milk and bread",
+        "predicted": [
+          {
+            "item": "butter milk",
+            "qty": null,
+            "unit": null,
+            "original_text": "butter milk"
+          },
+          {
+            "item": "bread",
+            "qty": null,
+            "unit": null,
+            "original_text": "bread"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 3,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.6229591369628906,
+        "input_tokens": 171,
+        "output_tokens": 56,
+        "parse_error": false
+      },
+      {
+        "id": 11,
+        "message": "nimbu lena 6-7",
+        "predicted": [
+          {
+            "item": "lemon",
+            "qty": 6,
+            "unit": "pieces",
+            "original_text": "nimbu lena 6-7"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.7557790279388428,
+        "input_tokens": 175,
+        "output_tokens": 39,
+        "parse_error": false
+      },
+      {
+        "id": 12,
+        "message": "laundry detergent powder, Surf Excel wala",
+        "predicted": [
+          {
+            "item": "laundry detergent powder",
+            "qty": null,
+            "unit": null,
+            "original_text": "laundry detergent powder, Surf Excel wala"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.7222840785980225,
+        "input_tokens": 180,
+        "output_tokens": 47,
+        "parse_error": false
+      },
+      {
+        "id": 13,
+        "message": "haldi, jeera, dhania powder - sab khatam hai",
+        "predicted": [
+          {
+            "item": "turmeric powder",
+            "qty": null,
+            "unit": null,
+            "original_text": "haldi"
+          },
+          {
+            "item": "cumin seeds",
+            "qty": null,
+            "unit": null,
+            "original_text": "jeera"
+          },
+          {
+            "item": "coriander powder",
+            "qty": null,
+            "unit": null,
+            "original_text": "dhania powder"
+          }
+        ],
+        "score": {
+          "items_found": 3,
+          "items_expected": 3,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 2.2727181911468506,
+        "input_tokens": 183,
+        "output_tokens": 101,
+        "parse_error": false
+      },
+      {
+        "id": 14,
+        "message": "2 coconuts please",
+        "predicted": [
+          {
+            "item": "coconut",
+            "qty": 2,
+            "unit": "pieces",
+            "original_text": "2 coconuts"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.7121200561523438,
+        "input_tokens": 173,
+        "output_tokens": 35,
+        "parse_error": false
+      },
+      {
+        "id": 15,
+        "message": "paneer 500gm aur dahi ek kg",
+        "predicted": [
+          {
+            "item": "paneer",
+            "qty": 500,
+            "unit": "gm",
+            "original_text": "paneer 500gm"
+          },
+          {
+            "item": "yogurt",
+            "qty": 1,
+            "unit": "kg",
+            "original_text": "dahi ek kg"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 2.179633855819702,
+        "input_tokens": 180,
+        "output_tokens": 74,
+        "parse_error": false
+      },
+      {
+        "id": 16,
+        "message": "bathroom soap khatam, dettol wala",
+        "predicted": [
+          {
+            "item": "Dettol soap",
+            "qty": null,
+            "unit": null,
+            "original_text": "bathroom soap khatam, dettol wala"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 1.6052219867706299,
+        "input_tokens": 178,
+        "output_tokens": 43,
+        "parse_error": false
+      },
+      {
+        "id": 17,
+        "message": "spinach aur karela lena, sabzi ke liye",
+        "predicted": [
+          {
+            "item": "spinach",
+            "qty": null,
+            "unit": null,
+            "original_text": "spinach"
+          },
+          {
+            "item": "bitter gourd",
+            "qty": null,
+            "unit": null,
+            "original_text": "karela"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 2.079709053039551,
+        "input_tokens": 181,
+        "output_tokens": 63,
+        "parse_error": false
+      },
+      {
+        "id": 18,
+        "message": "oil khatam - 1L sunflower oil",
+        "predicted": [
+          {
+            "item": "sunflower oil",
+            "qty": 1,
+            "unit": "litre",
+            "original_text": "1L sunflower oil"
+          }
+        ],
+        "score": {
+          "items_found": 1,
+          "items_expected": 1,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 2.0467488765716553,
+        "input_tokens": 179,
+        "output_tokens": 40,
+        "parse_error": false
+      },
+      {
+        "id": 19,
+        "message": "bhaiya please get chips lays 3 packets aur sprite 1.5L wala",
+        "predicted": [
+          {
+            "item": "lays chips",
+            "qty": 3,
+            "unit": "packet",
+            "original_text": "chips lays 3 packets"
+          },
+          {
+            "item": "sprite",
+            "qty": 1.5,
+            "unit": "litre",
+            "original_text": "sprite 1.5L wala"
+          }
+        ],
+        "score": {
+          "items_found": 2,
+          "items_expected": 2,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 2.0653741359710693,
+        "input_tokens": 189,
+        "output_tokens": 85,
+        "parse_error": false
+      },
+      {
+        "id": 20,
+        "message": "tissue paper, toilet paper, and kitchen towels",
+        "predicted": [
+          {
+            "item": "tissue paper",
+            "qty": null,
+            "unit": null,
+            "original_text": "tissue paper"
+          },
+          {
+            "item": "toilet paper",
+            "qty": null,
+            "unit": null,
+            "original_text": "toilet paper"
+          },
+          {
+            "item": "kitchen towels",
+            "qty": null,
+            "unit": null,
+            "original_text": "kitchen towels"
+          }
+        ],
+        "score": {
+          "items_found": 3,
+          "items_expected": 3,
+          "item_accuracy": 1.0,
+          "qty_accuracy": 1.0
+        },
+        "latency": 2.689762830734253,
+        "input_tokens": 177,
+        "output_tokens": 97,
+        "parse_error": false
+      }
+    ]
+  }
+]

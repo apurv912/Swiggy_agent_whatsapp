@@ -1,0 +1,37 @@
+{
+  "members": [
+    {
+      "id": "member-1",
+      "name": "Anika",
+      "role": "Owner"
+    },
+    {
+      "id": "member-2",
+      "name": "Rohan",
+      "role": "Member"
+    },
+    {
+      "id": "member-3",
+      "name": "Maya",
+      "role": "Member"
+    }
+  ],
+  "pendingPreCart": [
+    {
+      "id": "item-1",
+      "name": "Milk",
+      "quantity": "2 L"
+    },
+    {
+      "id": "item-2",
+      "name": "Bananas",
+      "quantity": "1 dozen"
+    },
+    {
+      "id": "item-3",
+      "name": "Atta",
+      "quantity": "5 kg"
+    }
+  ],
+  "approvedList": []
+}

@@ -1,0 +1,12 @@
+node_modules
+.npm-cache
+.next
+out
+dist
+.env*
+*.log
+.DS_Store
+tsconfig.tsbuildinfo
+data/requests.json
+memory/
+.claude/settings.local.json
