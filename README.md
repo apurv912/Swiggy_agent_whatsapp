@@ -1,6 +1,8 @@
 # Household Grocery Agent — WhatsApp × Swiggy
 
-> An AI agent that converts scattered WhatsApp grocery requests from family members into a structured, owner-reviewed pre-cart — ready to order on Swiggy Instamart in one tap.
+> An AI agent that converts scattered WhatsApp grocery requests from family members into a structured, owner-reviewed pre-cart — ready to place on Swiggy Instamart via their newly launched MCP API.
+
+**Built for the [Swiggy Builders Club](https://mcp.swiggy.com/builders/)** — Swiggy's developer programme that opens its AI commerce stack (3 MCP servers, 18+ API tools across Food, Instamart, and Dineout) to external builders creating AI-native commerce experiences.
 
 ---
 
@@ -62,6 +64,7 @@ Future sprints will introduce optional auto-approval rules for recurring staples
 | Framework | Next.js 15 (App Router), React 19, TypeScript |
 | AI / NLP Agent | Anthropic Claude Haiku (`claude-haiku-4-5-20251001`) |
 | WhatsApp Channels | Twilio WhatsApp API + Meta Cloud API (dual-provider support) |
+| Fulfillment (Sprint 5) | Swiggy MCP — Instamart, Food, Dineout tools via Builders Club |
 | Storage | JSON file (MVP) → PostgreSQL planned |
 | Testing | Vitest, mocked Anthropic SDK + fs |
 | Deployment Target | Vercel |
@@ -85,17 +88,27 @@ Future sprints will introduce optional auto-approval rules for recurring staples
 
 ---
 
-## Planned Swiggy Integration
+## Swiggy Builders Club & MCP Integration
 
-The `cartService.ts` module is the integration seam. Replacing the mock with real Swiggy calls:
+In January 2026, Swiggy launched MCP (Model Context Protocol) support across its entire platform — making Instamart the **first quick-commerce platform globally to adopt MCP**, with 40,000+ products accessible to AI agents. In April 2026, Swiggy opened this infrastructure to external developers through the **Swiggy Builders Club**.
 
-1. **Auth** — Swiggy Partner / Instamart API credentials
-2. **Item Mapping** — `normalized_item` → Swiggy SKU (lookup table + fuzzy catalogue search)
-3. **Cart API** — Push approved items with quantities to Swiggy cart
-4. **Checkout** — Trigger with household's saved address and payment method
-5. **Tracking** — Webhook/polling for delivery status → WhatsApp reply with ETA
+This project is being built as a Builders Club submission. The integration plan:
 
-Everything else in the agent (parsing, deduplication, approval flow) stays unchanged. Swiggy is just the fulfillment layer at the end of the pipeline.
+### Why MCP over REST
+
+MCP lets the agent call Swiggy's commerce tools natively — no custom API wrappers, no manual SKU mapping. The agent can describe what it needs in natural language and Swiggy's MCP server resolves it to the right product, cart action, and checkout flow. This is exactly the interface this agent is designed to use.
+
+### Integration Plan (Sprint 5)
+
+The `cartService.ts` module is the seam. Replacing the mock with Swiggy's MCP tools:
+
+1. **Connect** — Register with Swiggy Builders Club ([mcp.swiggy.com/builders](https://mcp.swiggy.com/builders/)) and obtain MCP server credentials
+2. **Item Resolution** — Pass `normalized_item` strings to Swiggy's Instamart MCP tool → resolves to product + quantity options from 40,000+ SKUs
+3. **Cart** — Use Swiggy's cart MCP tool to populate the order with approved items
+4. **Checkout** — Trigger checkout with household's saved address and payment method via Swiggy's checkout tool
+5. **Tracking** — Poll order status via MCP → send WhatsApp delivery update to the household owner
+
+Everything upstream (WhatsApp parsing, deduplication, pre-cart, approval flow) stays unchanged. Swiggy MCP is purely the fulfillment layer at the end of the pipeline.
 
 ---
 
@@ -133,8 +146,7 @@ The goal: a household agent that knows your household's consumption patterns bet
 | Sprint | Focus |
 |---|---|
 | ✅ MVP | WhatsApp intake, Claude parsing, pre-cart, approval UI |
-| 5 | Swiggy Instamart API integration |
-| 5 | PostgreSQL persistence, multi-household support |
+| 5 | Swiggy MCP integration (Builders Club), PostgreSQL, multi-household |
 | 6 | Spend analytics, weekly digest on WhatsApp |
 | 7 | Household rules engine, per-member controls, auto-approval for staples |
 | 8 | Proactive restocking nudges, pattern detection |
@@ -176,3 +188,5 @@ npm run typecheck # TypeScript check
 ## Built By
 
 **Apurv Adarsh** — Product Manager exploring AI-native household automation and agentic product design.
+
+Applying to [Swiggy Builders Club](https://mcp.swiggy.com/builders/) to build on Swiggy's MCP commerce stack.
